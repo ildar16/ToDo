@@ -1,0 +1,100 @@
+<style>
+.checkbox,
+.radio {
+ display: inline-block;
+ margin-bottom: 15px; 
+}
+.checkbox:hover,
+ .radio:hover {
+ cursor: pointer; 
+}
+.checkbox .fa,
+ .radio .fa {
+ width: 1em; 
+}
+.indent {
+ padding-left: 30px; 
+}
+.indent .fa {
+ margin-left: -30px; 
+}
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+ display: none; 
+}
+.checkbox input[type="checkbox"] + i:before,
+ .radio input[type="radio"] + i:before {
+ content: "\f096";
+ position: relative;
+ bottom: -4px;
+ margin-right: 5px;
+ color: #999; 
+}
+.checkbox:hover input[type="checkbox"] + i:before,
+.radio:hover input[type="radio"] + i:before {
+ color: green; 
+}
+.checkbox input[type="checkbox"]:checked + i:before,
+.radio input[type="radio"]:checked + i:before {
+ content: "\f046";
+ color: #17c317; 
+}
+.checkbox input[type="checkbox"]:disabled + i:before,
+.checkbox input[type="checkbox"]:disabled:checked + i:before,
+.radio input[type="radio"]:disabled + i:before,
+.radio input[type="radio"]:disabled:checked + i:before {
+ color: #ddd; 
+}
+
+/*RADIO*/
+.radio input[type="radio"] + i:before {
+ content: "\f1db"; 
+}
+.radio input[type="radio"]:checked + i:before {
+ content: "\f058"; 
+}
+
+/* CHECKBOX&RADIO XS*/
+.checkbox-xs input[type="checkbox"] + i:before,
+.radio-xs input[type="radio"] + i:before {
+ bottom: 0; 
+}
+.checkbox-xs.indent,
+.radio-xs.indent {
+ padding-left: 20px; 
+}
+.checkbox-xs.indent .fa,
+ .radio-xs.indent .fa {
+ margin-left: -20px; 
+}
+.trash{
+	float: right !important;
+}
+
+.fa{
+	vertical-align:middle;
+}
+
+.header{
+	margin-top: 2px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	color: #51ce14;
+}
+.radio label, .checkbox label{
+	vertical-align: middle;
+}
+.checkbox input[type="checkbox"] + i:before, .radio input[type="radio"] + i:before{
+	color: #ef0000;
+}
+@media (min-width:768px) {
+  .navbar{
+    margin-bottom: 300px;
+    margin-right: 250px;
+    background-color: transparent;
+    border-style: none;
+    float: right;
+  }
+}
+</style>
